@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARIT Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p><img src="img/ksu_horizontal.png" alt="" srcset=""></p>
+
+            <h1>Center for Applied Research in Information Technology</h1>
+            <a class="ksu" href="http://ccse.kennesaw.edu/it">KSU Website</a>
+            <p>&nbsp;</p> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="evaluation.html">Evaluation</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <blockquote style="text-align: center; margin: 50px;">This evaluation system is designed to provide evaluate eligibility of student interested in assistant positions at CARIT. 
+        It is organized such that the grade standards for both undergraduates and graduate students are indicated. 
+        Through choosing student status (whether Graduate or Undergraduate) and reviewing of the given topics,
+        a student can get their average mark and make sure they are eligible to continue to the application. 
+        The grading system ranges from A to F representing GPA from 4.0 to 0 respectively</blockquote>
+            <div class="containereval">
+                <h1>Student Assistant Position Eligibility Evaluation</h1>
+                <form id="eligibilityForm">
+                    <label for="studentStatus">Student Status:</label>
+                    <select id="studentStatus" onchange="populateCourses()">
+                        <option value="">Select Level</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Graduate">Graduate</option>
+                    </select>
+            
+                    <div id="courseGrades">
+                        <!-- Course grades input boxes will be dynamically populated here -->
+                    </div>
+                    
+                    <button type="button" onclick="evaluateEligibility()">Evaluate</button>
+                </form>
+            
+                <p id="resultMessage"></p>
+            </div>
+            
+            
+        </section>
+        <footer>
+            <p>This is a class project. </p>
+            <p>&nbsp;</p> 
+            <a href="http://it5443.azurewebsites.net">Class Website</a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
